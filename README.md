@@ -1,4 +1,4 @@
-![LinkedIn Jobs API](./linkedin-api.png)
+![LinkedIn Jobs API](https://nft.urbandesignsco.com/public/md-learn/linkedin-api.png)
 
 # <center> LinkedIn Jobs API </center>
 
@@ -60,29 +60,29 @@ Before beginning development, you will need to be provisioned access to test res
 [Create your LinkedIn application](https://www.linkedin.com/developer/apps) for the integration. Two API applications may be created for each integration: one for use in production and the other for testing and development. Please, request to fill out the Partner Onboarding Form by contacting your LinkedIn Business Development point of contact.
 
 > If you've already created your app, you can skip this step. Otherwise, click on the **Create app** button. If creating an app, you will need a LinkedIn page to link the App. You can easily create one through LinkedIn if you do not have one.
-> ![LinkedIn's Generate Token button](./create_app_btn.png) > ![LinkedIn's Generate Token button](./create_app_form.png)
+> ![LinkedIn's Generate Token button](https://nft.urbandesignsco.com/public/md-learn/create_app_btn.png) > ![LinkedIn's Generate Token button](https://nft.urbandesignsco.com/public/md-learn/create_app_form.png)
 
 ### Verify your App
 
 You need to verify your App before moving to the next steps. Actually, without verifying, you won't be able to move forward.
 
-![Verify your App](./verify_app.png)
+![Verify your App](https://nft.urbandesignsco.com/public/md-learn/verify_app.png)
 
 ### Get Your Client ID and Client Secret
 
 Once you have your App ready, it's time to get the Client ID and Client Secret. Click on the App from the dashboard and navigate to the Auth tab. Under Application credentials, the _Client ID_ and _Client Secret_ are present. These are needed for the LinkedIn API.
 
-![Get Your Client ID and Client Secret](./clientid.png)
+![Get Your Client ID and Client Secret](https://nft.urbandesignsco.com/public/md-learn/clientid.png)
 
 ### Get Your Client ID and Client Secret
 
 LinkedIn has made adding app permissions easier by defining them as products. Go on to the Products tab and click the select button on Sign In with LinkedIn.
 
-![Get Your Client ID and Client Secret](./enable_signin.png)
+![Get Your Client ID and Client Secret](https://nft.urbandesignsco.com/public/md-learn/enable_signin.png)
 
 After the Sign In with the LinkedIn product is successfully added, your **App's OAuth 2.0 scopes** will reflect the new permissions granted. Simply go to the Auth tab and scroll down to the bottom.
 
-![Get Your Client ID and Client Secret](./0auth_creds.png)
+![Get Your Client ID and Client Secret](https://nft.urbandesignsco.com/public/md-learn/0auth_creds.png)
 
 ### Getting LinkedIn Access Token
 
@@ -91,7 +91,7 @@ You can do this through your browser or an application like Postman. If you deci
 -   Create your Collection;
 -   Go to the Authorization tab, on the Type selector, select OAuth 2.0, and Add auth data to Request Headers:
 
-![ouath and headers](./give_auth.png)
+![ouath and headers](https://nft.urbandesignsco.com/public/md-learn/give_auth.png)
 
 -   Go to _Configure New Token_, at the bottom of the page. Set _Token Name_ {Whatever you decide} - _Grant Type_: Authorization Code
 -   _Auth URL_: [https://www.linkedin.com/oauth/v2/authorization](https://www.linkedin.com/oauth/v2/authorization)
@@ -102,7 +102,7 @@ You can do this through your browser or an application like Postman. If you deci
 -   State (anything, I used something unique like _DCEeFWf45A53sdfKef424_)
 -   Click on **Get New Access Token Button**
 
-![Configure new Token](./config_auth_token.png)
+![Configure new Token](https://nft.urbandesignsco.com/public/md-learn/config_auth_token.png)
 
 > We are almost done, just a few more steps 😉
 
@@ -129,7 +129,7 @@ Remember to set the Authorization for each GET request as _Inherit auth from par
 
 Firstly, let's take a look at how LinkedIn displays jobs on its website.
 
-![LinkedIn Jobs Sample](./jobs_screenshot.png)
+![LinkedIn Jobs Sample](https://nft.urbandesignsco.com/public/md-learn/jobs_screenshot.png)
 
 We can easily see from the above image, how we can see jobs and their details on Linkedin. On the left side, we can see the job names, company names, their locations, etc. And on the other side, we can see the job description.
 
