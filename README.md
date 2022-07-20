@@ -8,7 +8,7 @@ Given the significance of its data, LinkedIn has since
     2015 disabled public access to their API.
 </a>
 
- You need to be a [Linkedin Partner](#legal-requirements) in order to access the official LinkedIn API.
+ You need to be a [Linkedin Partner](#legal-requirements) to access the official LinkedIn API.
 
 <br/>
 
@@ -27,7 +27,7 @@ Given the significance of its data, LinkedIn has since
 
 ## What you can use LinkedIn Jobs API for
 The **LinkedIn Jobs API** allows users to automatically post jobs to LinkedIn from their **Applicant Tracking System (ATS)**, instead of manually posting via their LinkedIn Recruiter account. Recruiter clients who currently use a job distribution tool typically use this API.
-It enables them to simultaneously post jobs to LinkedIn and other websites.
+It enables them to simultaneously post jobs on LinkedIn and other websites.
 ATS partners no longer need to be authenticated to post on behalf of clients.
 
 
@@ -37,18 +37,18 @@ ATS partners no longer need to be authenticated to post on behalf of clients.
 ## Getting Started
 
 
-The LinkedIn API uses [OAuth 2.0](https://oauth.net/2) for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. Most permissions and partner programs require explicit approval from LinkedIn. Open Permissions are the only permissions that are available to all developers without special approval. You can find the complete guide on how access LinkedIn APIs [here](https://docs.microsoft.com/en-us/linkedin/shared/authentication/getting-access?view=li-lms-2022-07).
+The LinkedIn API uses [OAuth 2.0](https://oauth.net/2) for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. Most permissions and partner programs require an explicit approval from LinkedIn. Open Permissions are the only permissions that are available to all developers without special approval. You can find the complete guide on how to access LinkedIn APIs [here](https://docs.microsoft.com/en-us/linkedin/shared/authentication/getting-access?view=li-lms-2022-07).
 
 The **LinkedIn Jobs API** allows authorized third parties such as clients, ATS systems, and job distributors to post jobs directly to LinkedIn on behalf of customers. This article provides instructions for integrating with LinkedIn's Jobs API.
 
-The link below will take you to LinkedIn's Postman's workspace. Select the workspace with the name  `LinkedIn Talent Solutions`, you will find the `Job Posting` API collection in it.
+The link below will take you to LinkedIn's Postman's workspace. Select the workspace with the name  `LinkedIn Talent Solutions, you will find the `Job Posting` API collection in it.
 
 [**LinkedIn Postman workspace**](https://www.postman.com/linkedin-developer-apis?tab=workspaces)
 
 ### Legal Requirements
 
 #### Note:
-- The use of these APIs is restricted to those developers approved by LinkedIn. Please reach out to your LinkedIn Relationship Manager or Business Development contact as you will need to meet certain criteria and sign an API agreement with data restrictions in order to use this integration.
+- The use of these APIs is restricted to those developers approved by LinkedIn. Please reach out to your LinkedIn Relationship Manager or Business Development contact as you will need to meet certain criteria and sign an API agreement with data restrictions to use this integration.
 - Complete the [LinkedIn Talent Solutions Partner Request Form](https://business.linkedin.com/talent-solutions/ats-partners/partner-application) if you are not yet a LinkedIn Talent Solutions Partner.
 
 <br/>
@@ -88,7 +88,7 @@ LinkedIn has made adding app permissions easier by defining them as products. Go
 ![Get Your Client ID and Client Secret](./enable_signin.png)
 
 
-After the Sign In with LinkedIn product is successfully added, your **App's OAuth 2.0 scopes** will reflect the new permissions granted. Simply go to the Auth tab and scroll down to the bottom.
+After the Sign In with the LinkedIn product is successfully added, your **App's OAuth 2.0 scopes** will reflect the new permissions granted. Simply go to the Auth tab and scroll down to the bottom.
 
 ![Get Your Client ID and Client Secret](./0auth_creds.png)
 
@@ -98,17 +98,17 @@ After the Sign In with LinkedIn product is successfully added, your **App's OAut
 You can do this through your browser or an application like Postman. If you decide to use Postman and have never used it before, you can get it on [Postman's](https://postman.com) official website. Now, follow these steps:
 
 - Create your Collection;
-- Go to Authorization tab, on the Type selector, select OAuth 2.0 and Add auth data to Request Headers:
+- Go to the Authorization tab, on the Type selector, select OAuth 2.0, and Add auth data to Request Headers:
 
 ![ouath and headers](./give_auth.png)
 
-- Go to *Configure New Token*, the bottom of the page. Set *Token Name* {Whatever you decide} - *Grant Type*: Authorization Code
+- Go to *Configure New Token*, at the bottom of the page. Set *Token Name* {Whatever you decide} - *Grant Type*: Authorization Code
 - *Auth URL*: [https://www.linkedin.com/oauth/v2/authorization](https://www.linkedin.com/oauth/v2/authorization)
 - *Access Token URL*: [https://www.linkedin.com/oauth/v2/accessToken](https://www.linkedin.com/oauth/v2/accessToken)
-- *Client ID*: (the Client Id on the LinkedIn App you created, you can find it in the Auth tab)
+- *Client ID*: (the Client Id on the LinkedIn App you created, you can find in the Auth tab)
 - *Client Secret*: (on the LinkedIn App, Auth tab > Application keys}
 - Scope: *r_emailaddress* *r_liteprofile* (based on the LinkedIn App Authorization)
-- State (anything, I used something unique like: *DCEeFWf45A53sdfKef424*)
+- State (anything, I used something unique like *DCEeFWf45A53sdfKef424*)
 - Click on **Get New Access Token Button**
 
 ![Configure new Token](./config_auth_token.png)
@@ -116,7 +116,7 @@ You can do this through your browser or an application like Postman. If you deci
 
 > We are almost done, just a few more steps 😉
 
-After you click the **Get New Access Token Button**, a browser window will open up asking for your LinkedIn credentials. Follow the steps presented in the browser to get your Token in your Postman collection as a result.
+After you click the **Get New Access Token Button**, a browser window will open up asking for your LinkedIn credentials. Follow the steps presented in the browser to get your Token in your Postman collection as result.
 
 
 ## And that's it! Let's make sure it's working:
