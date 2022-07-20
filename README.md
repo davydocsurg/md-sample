@@ -2,13 +2,9 @@
 
 # <center> LinkedIn Jobs API </center>
 
-LinkedIn is a powerful professional social network. It is a perfect source of professional information and job postings.
-Given the significance of its data, LinkedIn has since
-<a href="https://developer.linkedin.com/blog/posts/2015/todays-changes" target="_blank">
-2015 disabled public access to their API.
-</a>
+LinkedIn is, undoubtedly, a household name in the professional social network space. It has made the process of job hunting and recruitment easy.
 
-You need to be a [Linkedin Partner](#legal-requirements) to access the official LinkedIn API.
+Moreso, it continues to find ways to seamlessly deliver this solution; LinkedIn Jobs API, is one of such ways.
 
 <br/>
 
@@ -19,7 +15,7 @@ You need to be a [Linkedin Partner](#legal-requirements) to access the official 
 -   [Getting Access to LinkedIn APIs](#getting-access-to-linkedin-apis)
 -   [Fetching a list of jobs](#fetching-a-list-of-jobs)
 -   [Getting job details](#getting-job-details)
--   Limitations of LinkedIn Jobs API
+-   [Limitations of LinkedIn Jobs API](#limitations-of-linkedin-jobs-api)
 
 <br/>
 <br/>
@@ -247,3 +243,11 @@ Output:
  }
 }
 ```
+
+## Limitations of LinkedIn Jobs API
+
+As promising and exciting as this feature is, it is far from a one-size-fit-all solution. It is not without its limitations. Below are some of its limitations:
+
+-   Only Applicant Tracking System (ATS) have access to this feature
+-   Not all user data can be retrieved, personal information are witheld.
+    For example, only name, photo, headline, contact information, experience, education, summary, and location are available. The user's connections, network updates, job listings, groups,companies and other contents are witheld. Other restrictions can be found [here](https://legal.linkedin.com/api-terms-of-use)
