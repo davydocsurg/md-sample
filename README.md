@@ -140,12 +140,11 @@ Remember to set the Authorization for each GET request as *Inherit auth from par
 
 Firstly, let's take a look at how LinkedIn displays jobs on its website.
 
-![LinkedIn Jobs Sample](./jobs_ss.gif)
+![LinkedIn Jobs Sample](./jobs_screenshot.png)
 
 We can easily see from the above gif, how we can see jobs and their details on Linkedin. On the left side, we can see the job names, company names, their locations, etc. And on the other side, we can see the job description.
 
 
 To use the job listings endpoints in LinkedIn's API, go back to [**LinkedIn Postman workspace**](https://www.postman.com/linkedin-developer-apis?tab=workspaces)
 
-# md-sample
-# md-sample
+
